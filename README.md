@@ -147,6 +147,8 @@ Some visual and audio elements are inspired by or derived from classic games suc
 
 These materials are included solely for non-commercial use. If required, they can be removed or replaced with original assets.
 
+Music files are not included for copyright reasons. See [Background Music README](assets/bgMusic/README.md) for details.
+
 ## 📌 Author
 
 Daniele Cesarini  
