@@ -26,34 +26,39 @@ public class AudioManager {
             raceCountdownPlayer = new MediaPlayer(raceCountdown);
             raceCountdownPlayer.setVolume(0.5);
         } catch (Exception e) {
-            System.err.println("Errore nel caricamento della musica: " + e.getMessage());
+            System.err.println("Error loading audio: " + e.getMessage());
         }
 
         loadEffect("collision", COLLISION_SOUND);
     }
 
+    private MediaPlayer loadMusic(String path, double volume, boolean loop) {
+        try {
+            File file = new File(path);
+            if (!file.exists()) {
+                System.err.println("Missing audio file: " + path);
+                return null;
+            }
+
+            Media media = new Media(file.toURI().toString());
+            MediaPlayer player = new MediaPlayer(media);
+            player.setVolume(volume);
+            if (loop) {
+                player.setCycleCount(MediaPlayer.INDEFINITE);
+            }
+            return player;
+        } catch (Exception e) {
+            System.err.println("Error loading audio '" + path + "': " + e.getMessage());
+            return null;
+        }
+    }
+
     private void loadSoundtracks() {
-        Media welcomeMusic = new Media(new File(WELCOME_SONG).toURI().toString());
-        welcomeMusicPlayer = new MediaPlayer(welcomeMusic);
-        // loop infinito
-        welcomeMusicPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        // volume iniziale (0.0–1.0)
-        welcomeMusicPlayer.setVolume(0.8);
-
-        Media bgMusic = new Media(new File(RACE_SONG).toURI().toString());
-        bgMusicPlayer = new MediaPlayer(bgMusic);
-        bgMusicPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        bgMusicPlayer.setVolume(0.5);
-
-        Media victoryMusic = new Media(new File(VICTORY_SONG).toURI().toString());
-        victoryMusicPlayer = new MediaPlayer(victoryMusic);
-        victoryMusicPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        victoryMusicPlayer.setVolume(0.8);
-
-        Media gameOverMusic = new Media(new File(GAME_OVER_SONG).toURI().toString());
-        gameOverMusicPlayer = new MediaPlayer(gameOverMusic);
-        gameOverMusicPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        gameOverMusicPlayer.setVolume(1);
+        welcomeMusicPlayer = loadMusic(WELCOME_SONG, 0.8, true);
+        bgMusicPlayer = loadMusic(RACE_SONG, 0.5, true);
+        victoryMusicPlayer = loadMusic(VICTORY_SONG, 0.8, true);
+        gameOverMusicPlayer = loadMusic(GAME_OVER_SONG, 1.0, true);
+        raceCountdownPlayer = loadMusic(COUNTDOWN_SOUND, 0.5, false);
     }
 
     private void loadEffect(String key, String resourcePath) {
