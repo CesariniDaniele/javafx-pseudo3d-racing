@@ -36,11 +36,11 @@ The project is structured into several main components:
 
 - `roadComponents/` → camera, road, and segment projection logic  
 - `assetsManagers/` → resource and entity management  
-- `sprites/` → rendering of player and opponents  
+- `sprites/` → modelling of player, opponents and decorative elements
 - `scenes/` → scene management and game flow  
-- `ai/` → opponent behavior and race logic  
+- `ai/` → opponent behavior and race logic, included collision detection  
 
-This separation allows the rendering logic to remain distinct from gameplay and asset management.
+This separation allows to follow the **single responsibility principle**, enabling future refactoring toward a more modular design.
 
 ---
 
@@ -103,7 +103,6 @@ Suggestions, discussions, and contributions are welcome.
 
 In particular, contributions related to:
 
-- rendering architecture  
 - modular design  
 - advanced pseudo-3D features  
 
@@ -122,7 +121,6 @@ are highly appreciated.
 
 - Java  
 - JavaFX  
-- Object-Oriented Programming  
 
 ---
 
