@@ -4,6 +4,7 @@
 
 This project explores how to recreate classic “old-school” racing visuals using a 2D engine, without relying on modern 3D frameworks.
 
+The current implementation focuses on a **straight-track racing scenario**, serving as a foundation for future extensions such as curves and elevation changes.
 ---
 
 ## 🚀 Overview
@@ -40,23 +41,35 @@ The project is structured into several main components:
 - `scenes/` → scene management and game flow  
 - `ai/` → opponent behavior and race logic, included collision detection  
 
-This separation allows to follow the **single responsibility principle**, enabling future refactoring toward a more modular design.
+This separation helps enforce the **single responsibility principle** and makes future refactoring toward a more modular design easier.
+
+A detailed architectural description and UML diagrams are available in:
+
+👉 [Architecture Documentation](docs/architecture.md)
 
 ---
 
 ## 🎮 Features
 
-- pseudo-3D road rendering using perspective projection  
-- sprite-based rendering (player, opponents, environment)  
-- opponent AI and collision handling  
-- scene-based architecture (menu, gameplay, credits)  
-- audio management (music and sound effects)  
+Main implemented features include:
+
+- pseudo-3D road rendering on a straight track
+- player movement and opponent AI
+- NPC obstacles and collision handling
+- dynamic score system
+- minimap and HUD
+- multiple scenes (start, gameplay, ending)
+- sound effects
+
+A detailed description of gameplay mechanics and system behavior is available here:
+
+👉 [Features Documentation](docs/features.md)
 
 ---
 
 ## 📸 Screenshots
 
-*(you can add gameplay images here later)*
+![Gameplay](docs/images/gameplay.png)
 
 ---
 
@@ -112,8 +125,9 @@ are highly appreciated.
 
 ## 📄 Additional Material
 
-- UML diagram (project architecture)
-- project report (PDF)
+- [Architecture Documentation](docs/architecture.md)
+- [Features Documentation](docs/features.md)
+- UML diagrams in `docs/uml/`
 
 ---
 
@@ -123,6 +137,14 @@ are highly appreciated.
 - JavaFX  
 
 ---
+
+## 📦 Assets Notice
+
+This project is developed for educational and demonstration purposes.
+
+Some visual and audio elements are inspired by or derived from classic games such as *Chrono Trigger* and *Pole Position*.
+
+These materials are included solely for non-commercial use. If required, they can be removed or replaced with original assets.
 
 ## 📌 Author
 
