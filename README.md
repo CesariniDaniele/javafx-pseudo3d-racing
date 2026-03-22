@@ -97,6 +97,10 @@ The core of the project is the pseudo-3D projection:
 
 This approach allows creating a 3D illusion using only 2D transformations.
 
+The underlying projection logic is inspired by classic pseudo-3D techniques, well explained in:
+
+👉 https://jakesgordon.com/writing/javascript-racer/
+
 ---
 
 ## 🔮 Future Work
@@ -141,7 +145,7 @@ are highly appreciated.
 
 ## 📦 Assets Notice
 
-This project is developed for educational and demonstration purposes.
+**This project is developed for educational and demonstration purposes.**
 
 Some visual and audio elements are inspired by or derived from classic games such as *Chrono Trigger* and *Pole Position*.
 

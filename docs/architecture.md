@@ -77,6 +77,12 @@ The pseudo-3D effect is achieved through:
 
 Each segment is projected from 3D space into 2D canvas coordinates, creating a depth illusion.
 
+The mathematical intuition behind this approach is similar to classic pseudo-3D techniques, as described in:
+
+👉 https://jakesgordon.com/writing/javascript-racer/
+
+In this project, these concepts are adapted and integrated into a JavaFX-based rendering pipeline, combined with a full object-oriented game architecture.
+
 ---
 
 ## Game Loop
