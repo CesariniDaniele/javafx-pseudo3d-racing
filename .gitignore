@@ -2,6 +2,9 @@
 build/
 dist/
 
+#Assets with copyright 
+assets/bgMusic/*.mp3
+
 # NetBeans private files
 nbproject/private/
 

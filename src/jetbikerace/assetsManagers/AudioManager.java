@@ -20,15 +20,7 @@ public class AudioManager {
     private final Map<String, AudioClip> soundEffects = new HashMap<>();
 
     public AudioManager() {
-        try {
-            loadSoundtracks();
-            Media raceCountdown = new Media(new File(COUNTDOWN_SOUND).toURI().toString());
-            raceCountdownPlayer = new MediaPlayer(raceCountdown);
-            raceCountdownPlayer.setVolume(0.5);
-        } catch (Exception e) {
-            System.err.println("Error loading audio: " + e.getMessage());
-        }
-
+        loadSoundtracks();  
         loadEffect("collision", COLLISION_SOUND);
     }
 
@@ -67,7 +59,7 @@ public class AudioManager {
             clip.setVolume(0.5);
             soundEffects.put(key, clip);
         } catch (Exception e) {
-            System.err.println("Errore caricando effetto '" + key + "': " + e.getMessage());
+            System.err.println("Error loading sound effect '" + key + "': " + e.getMessage());
         }
     }
 
