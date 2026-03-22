@@ -5,6 +5,7 @@
 This project explores how to recreate classic “old-school” racing visuals using a 2D engine, without relying on modern 3D frameworks.
 
 The current implementation focuses on a **straight-track racing scenario**, serving as a foundation for future extensions such as curves and elevation changes.
+
 ---
 
 ## 🚀 Overview
