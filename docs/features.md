@@ -1,4 +1,4 @@
-# Requirements
+# 🎮 Features
 
 The application satisfies the following functional and technical requirements:
 
