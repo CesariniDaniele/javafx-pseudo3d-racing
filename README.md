@@ -130,4 +130,3 @@ are highly appreciated.
 
 Daniele Cesarini  
 MSc student in Data Science @ University of Perugia  
-Machine Learning & Robotics
