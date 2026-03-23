@@ -1,5 +1,9 @@
 # JavaFX Pseudo-3D Racing
 
+![Intro](docs/images/intro.gif)
+
+![Gameplay](docs/images/gameplay.gif)
+
 **JetBikeRace** is an arcade-style racing game prototype built in JavaFX, focused on implementing pseudo-3D road rendering with a retro aesthetic.
 
 This project explores how to recreate classic “old-school” racing visuals using a 2D engine, without relying on modern 3D frameworks.
@@ -65,12 +69,6 @@ Main implemented features include:
 A detailed description of gameplay mechanics and system behavior is available here:
 
 👉 [Features Documentation](docs/features.md)
-
----
-
-## 📸 Screenshots
-
-![Gameplay](docs/images/gameplay.png)
 
 ---
 
