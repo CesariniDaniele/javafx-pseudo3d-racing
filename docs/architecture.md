@@ -111,21 +111,4 @@ This ensures real-time interaction and smooth animation.
 - RoadManager → `uml/uml-roadmanager.png`
 - RaceManager → `uml/uml-racemanager.png`
 
----
-
-## Limitations
-
-The current architecture is monolithic:
-
-- strong coupling between components  
-- limited scalability  
-- harder to isolate bugs in large systems  
-
----
-
-## Future Improvements
-
-- modularization of components  
-- decoupling rendering from game logic  
-- reusable pseudo-3D rendering engine  
-- improved maintainability and scalability  
+  

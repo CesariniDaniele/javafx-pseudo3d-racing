@@ -11,6 +11,6 @@ Expected filenames:
 - `victory.mp3` → victory screen
 - `gameOver.mp3` → game over screen
 
-Place them inside: `assets\bgMusic\`
+Place them inside: `assets/bgMusic/`
 
 The game will run correctly even without these files.

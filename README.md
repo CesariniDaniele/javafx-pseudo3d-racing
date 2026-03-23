@@ -76,14 +76,28 @@ A detailed description of gameplay mechanics and system behavior is available he
 
 ## ⚙️ How to Run
 
-### Requirements
+### Run the application
 
-- Java (JDK 8+ or compatible with JavaFX setup)
-- JavaFX SDK (if not bundled with your JDK)
+The easiest way to run the project is to download the latest release from the GitHub Releases page:
+
+👉 [Download latest release](https://github.com/CesariniDaniele/javafx-pseudo3d-racing/releases/tag/v1.0)
+
+The release includes a ready-to-run version of the application along with instructions.
 
 ### Run from source
 
-Compile and run the project using NetBeans or via command line using the provided `build.xml`.
+If you prefer to run the project from source:
+
+1. Clone the repository  
+2. Make sure Java and JavaFX are correctly installed  
+3. Build and run the project using your preferred setup 
+
+### Requirements
+
+- Java JDK 17+ (tested with JDK 23)
+- JavaFX SDK (tested with JavaFX 23)
+
+> ⚠️ JavaFX is not bundled with the JDK and must be installed separately.
 
 ---
 
