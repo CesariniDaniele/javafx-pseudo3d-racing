@@ -131,12 +131,9 @@ Planned improvements include:
 
 Suggestions, discussions, and contributions are welcome.
 
-In particular, contributions related to:
+If you are interested in collaborating or improving the project (e.g. adding curves, hills, or refactoring the architecture), feel free to open an issue or a pull request.
 
-- modular design  
-- advanced pseudo-3D features  
-
-are highly appreciated.
+📫 For direct contact: d.cesarini.info(at)gmail.com
 
 ---
 
