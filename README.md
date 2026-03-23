@@ -44,7 +44,7 @@ The project is structured into several main components:
 - `assetsManagers/` → resource and entity management  
 - `sprites/` → modelling of player, opponents and decorative elements
 - `scenes/` → scene management and game flow  
-- `ai/` → opponent behavior and race logic, included collision detection  
+- `ai/` → opponent behavior, race logic, and collision handling 
 
 This separation helps enforce the **single responsibility principle** and makes future refactoring toward a more modular design easier.
 
@@ -88,7 +88,7 @@ If you prefer to run the project from source:
 
 1. Clone the repository  
 2. Make sure Java and JavaFX are correctly installed  
-3. Build and run the project using your preferred setup 
+3. Build and run the project using your preferred Java build workflow
 
 ### Requirements
 
@@ -159,9 +159,7 @@ are highly appreciated.
 
 **This project is developed for educational and demonstration purposes.**
 
-Some visual and audio elements are inspired by or derived from classic games such as *Chrono Trigger* and *Pole Position*.
-
-These materials are included solely for non-commercial use. If required, they can be removed or replaced with original assets.
+Some visual and audio elements are inspired by or derived from classic games such as *Chrono Trigger* and *Pole Position*. If required, they can be removed or replaced with original assets.
 
 Music files are not included for copyright reasons. See [Background Music README](assets/bgMusic/README.md) for details.
 
